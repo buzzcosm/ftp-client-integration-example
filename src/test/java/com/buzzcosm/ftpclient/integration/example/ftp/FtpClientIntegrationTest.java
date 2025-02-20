@@ -73,7 +73,7 @@ class FtpClientIntegrationTest {
     @Test
     @Order(2)
     void givenLocalFile_whenUploadingIt_thenItExistsOnRemoteLocation() throws URISyntaxException, IOException {
-        File file = new File(getClass().getClassLoader().getResource("test-data/ftp-tests/baz.txt").toURI());
+        File file = new File(getClass().getClassLoader().getResource("test-data/baz.txt").toURI());
         FtpFileProcess.putFileToPath(ftpClient, file, "/buz.txt");
         assertThat(fakeFtpServer.getFileSystem().exists("/buz.txt")).isTrue();
     }
