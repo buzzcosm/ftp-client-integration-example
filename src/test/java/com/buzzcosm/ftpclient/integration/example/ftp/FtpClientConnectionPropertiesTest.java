@@ -1,4 +1,4 @@
-package com.buzzcosm.ftpclient.integration.example.model;
+package com.buzzcosm.ftpclient.integration.example.ftp;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
