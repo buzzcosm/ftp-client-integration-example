@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class FtpClientConnectionProperties {
+public final class FtpClientConnectionProperties {
     private String host;
     private int port;
     private String username;
