@@ -39,6 +39,7 @@ public class Main {
             processFile(new ByteArrayInputStream(file2.toByteArray()));
 
             ftpClient.disconnect();
+            
         } catch (IOException e) {
             log.error("FTP Error", e);
         }
